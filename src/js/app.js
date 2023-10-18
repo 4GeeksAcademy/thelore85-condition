@@ -35,8 +35,10 @@ function render(variables = {}) {
           <img src="${variables.avatarURL}" class="photo" />
           <h1>${variables.name ? variables.name : " "} ${
     variables.lastName ? variables.lastName : " "
-  } ${variables.role ? variables.role : " "}</h1>
+  }</h1>
+          <h2>${variables.role ? variables.role : " "}</h2>
           <h3>${variables.city ? variables.city : " "}</h3>
+          <h3>${variables.country ? variables.country : " "}</h3>
           <ul class="${variables.socialMediaPosition}">
             <li><a href="${
               variables.twitter ? variables.twitter : " "
